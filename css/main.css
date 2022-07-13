@@ -79,25 +79,13 @@ section{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
 }
 
-.header-portfolio{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../assets/header-bg.jpg);
-    min-height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-}
 .navbar{
     position: fixed;
     top: 0;
@@ -256,7 +244,7 @@ section{
     margin-right: 1.4rem;
 }
 /* video */
-.video{
+/* .video{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../assets/video-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -285,7 +273,7 @@ section{
     letter-spacing: 1px;
     color: var(--white-smoke);
     opacity: 0.7;
-}
+} */
 
 /* team */
 .team .row{
@@ -296,7 +284,11 @@ section{
 }
 .team-img{
     position: relative;
+    background-color: #f0f0f0;
+    filter: sepia(0.2);
+
 }
+
 /* .team-icons{
     position: absolute;
     top: 50%;
@@ -317,6 +309,7 @@ section{
     background: var(--mount-meadow);
     color: #fff;
 } */
+
 .team-img:hover .team-icons{
     opacity: 1;
 }
@@ -371,7 +364,7 @@ section{
 }
 
 /* pricing */
-.pricing .row{
+/* .pricing .row{
     margin-top: 2rem;
 }
 .pricing-item{
@@ -405,7 +398,7 @@ section{
 .pricing-item ul li{
     padding: 0.8rem 0;
     opacity: 0.7;
-}
+} */
 
 /* testimonial */
 .testimonial{
@@ -635,13 +628,13 @@ section{
     }
 
     /* navbar change */
-    /* .cng-navbar{
+     .cng-navbar{
         -webkit-box-shadow: 0 2px 5px 0 rgba(207, 205, 207, 0.3);
         -moz-box-shadow: 0 2px 5px 0 rgba(207, 205, 207, 0.3);
         box-shadow: 0 2px 5px 0 rgba(207, 205, 207, 0.3);
         margin-top: 0;
         background: #fff;
-    } */
+    } 
     .cng-navbar .navbar-brand{
         color: var(--night-rider);
     }
