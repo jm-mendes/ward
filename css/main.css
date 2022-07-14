@@ -59,6 +59,10 @@ h1, h2, h3, h4, h5, h6{
 section{
     padding: 6.5rem 0;
 }
+
+#contact.contact{
+    padding-bottom: 0;
+}
 .title{
     padding: 0.6rem 0;
     text-align: center;
@@ -79,7 +83,7 @@ section{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    /* background-attachment: fixed; // ver se tem uma propriedade semelhante que seja possível colocar no IOS */
     color: #fff;
     display: flex;
     flex-direction: column;
