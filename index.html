@@ -470,10 +470,14 @@
       <div class="row wow animate__animated animate__fadeInUp animate__slow">
         <div class="contact-left">
           <h2>Envie uma mensagem</h2>
-          <form>
-            <input type="text" class="form-control" placeholder="Nome">
-            <input type="email" class="form-control" placeholder="Email">
-            <textarea placeholder="Digite aqui sua mensagem" rows="6"></textarea>
+          <form action="https://api.staticforms.xyz/submit" method="POST">
+
+            <input type="hidden" name="accessKey" value="33f20197-235a-4edd-86ef-877f91800666">
+            <input type="hidden" name="redirectTo" value="/index.html">
+
+            <input type="text" class="form-control" name="name" placeholder="Nome">
+            <input type="email" class="form-control" name="email" placeholder="Email">
+            <textarea placeholder="Digite aqui sua mensagem" name="message" rows="6"></textarea>
             <button type="submit" class="submit-btn">Enviar</button>
           </form>
         </div>

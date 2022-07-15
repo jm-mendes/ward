@@ -101,30 +101,30 @@ $(document).ready(function () {
   });
 });
 
-function isIOS() {
-  var ua = navigator.userAgent.toLowerCase();
+// function isIOS() {
+//   var ua = navigator.userAgent.toLowerCase();
 
-  //Lista de dispositivos que acessar
-  var iosArray = ['iphone', 'ipod'];
+//   //Lista de dispositivos que acessar
+//   var iosArray = ['iphone', 'ipod'];
 
-  var isApple = false;
+//   var isApple = false;
 
-  //valida seu array
-  iosArray.forEach(function (item) {
+//   //valida seu array
+//   iosArray.forEach(function (item) {
 
-    if (ua.indexOf(iosArray[item]) != -1) {
-      isApple = true;
-    }
+//     if (ua.indexOf(iosArray[item]) != -1) {
+//       isApple = true;
+//     }
 
-  });
+//   });
 
-  return isApple;
-}
+//   return isApple;
+// }
 
-if (!isIOS()) {
-  $('header').css({
-    backgroundAttachment: 'fixed',
-  });
-}
+// if (!isIOS()) {
+//   $('header').css({
+//     backgroundAttachment: 'fixed',
+//   });
+// }
 
-isIOS;
+// isIOS;
