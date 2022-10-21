@@ -78,7 +78,7 @@ section{
 
 /* header */
 .header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/arquitetura-engenharia-maringa-bg-header.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/arquitetura-engenharia-maringa-bg-header.webp);
     min-height: 100vh;
     background-position: center;
     background-size: cover;
@@ -166,7 +166,7 @@ section{
 .btn-trans{
     color: #fff;
     transition: var(--transition);
-    display: none;
+    /* display: none; */
 }
 .btn-trans:hover{
     background: var(--mount-meadow);
@@ -247,9 +247,10 @@ section{
     border-radius: 2px;
     margin-right: 1.4rem;
 }
+
 /* video */
-/* .video{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../assets/video-bg.jpg);
+.video{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -258,26 +259,32 @@ section{
     text-align: center;
 }
 .video a{
-    font-size: 2.2rem;
     color: #fff;
-    width: 65px;
-    height: 65px;
     border-radius: 50%;
-    background-color: var(--mount-meadow);
-    padding-left: 7px;
     margin: 0 auto;
+}
+
+.video .project {
+    width: 280px;
+    height: auto;
 }
 .video h2{
     font-size: 2rem;
     color: var(--white-smoke);
-    padding: 1.2rem 0;
 }
 .video p{
     font-size: 1.1rem;
     letter-spacing: 1px;
     color: var(--white-smoke);
     opacity: 0.7;
-} */
+}
+
+.video .projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 2em;
+}
 
 /* team */
 .team .row{
@@ -406,7 +413,7 @@ section{
 
 /* testimonial */
 .testimonial{
-    background-image: linear-gradient(rgba(27, 188, 156, 0.8), rgba(27, 188, 156, 0.9)), url(../assets/testimonial-bg.jpg);
+    background-image: linear-gradient(rgba(27, 188, 156, 0.8), rgba(27, 188, 156, 0.9)), url(../assets/testimonial-bg.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -591,6 +598,10 @@ section{
     .contact-right > div:first-child{
         margin-top: 0;
     }
+
+    .video .projeto{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -628,7 +639,7 @@ section{
     }
     .btn-trans{
         display: inline-block;
-        margin-right: 0.8rem;
+        /* margin-right: 0.8rem; */
     }
 
     /* navbar change */
@@ -657,6 +668,10 @@ section{
     .video p{
         width: 60%;
     }
+
+    .video .projeto{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -679,6 +694,9 @@ section{
     }
     .contact-right{
         padding-left: 4rem!important;
+    }
+    .video .projeto{
+        width: 100%;
     }
 }
 
